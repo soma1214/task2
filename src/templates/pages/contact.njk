@@ -1,0 +1,88 @@
+{% extends "../layouts/base.njk" %}
+
+{% block title %}BootstrapLab · Contact{% endblock %}
+
+{% block content %}
+<!-- Contact Hero -->
+<section class="contact-hero text-white py-5">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h1 class="display-4 fw-bold">Get in Touch</h1>
+        <p class="lead opacity-75">We'd love to hear from you — fill out the form below</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Contact Info -->
+      <div class="col-lg-4">
+        <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+          <h4 class="fw-semibold"><i class="bi bi-info-circle me-2 text-primary"></i>Contact Info</h4>
+          <ul class="list-unstyled mt-4">
+            <li class="mb-3"><i class="bi bi-envelope-fill text-primary me-3"></i> hello@bootstrap-lab.dev</li>
+            <li class="mb-3"><i class="bi bi-geo-alt-fill text-primary me-3"></i> 123 Bootstrap St, Web City</li>
+            <li class="mb-3"><i class="bi bi-phone-fill text-primary me-3"></i> +1 (555) 123-4567</li>
+          </ul>
+          <hr />
+          <h5 class="fw-semibold">Follow Us</h5>
+          <div class="d-flex gap-3 fs-4">
+            <a href="#" class="text-secondary"><i class="bi bi-github"></i></a>
+            <a href="#" class="text-secondary"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-secondary"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="col-lg-8">
+        <div class="contact-form-bg p-4 p-md-5">
+          <h4 class="fw-semibold">Send a Message</h4>
+          <p class="text-muted small">We'll get back to you within 24 hours.</p>
+          <form id="contactForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="fullName" class="form-label fw-semibold">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="John Doe" required />
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label fw-semibold">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+              </div>
+              <div class="col-12">
+                <label for="subject" class="form-label fw-semibold">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="How can we help?" required />
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label fw-semibold">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Your message here..." required></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="agree" required />
+                  <label class="form-check-label small" for="agree">
+                    I agree to the <a href="#" class="text-primary">terms and conditions</a>
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-lg px-5 py-2 fw-semibold">
+                  <i class="bi bi-send me-2"></i> Send Message
+                </button>
+                <p class="text-muted small mt-2"><i class="bi bi-info-circle"></i> This is a working form — it will show a success alert.</p>
+              </div>
+            </div>
+          </form>
+          <div id="successAlert" class="alert alert-success mt-4 d-none" role="alert">
+            <i class="bi bi-check-circle-fill me-2"></i> Thank you! Your message has been sent successfully.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

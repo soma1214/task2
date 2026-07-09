@@ -1,0 +1,19 @@
+{
+  "name": "bootstrap5-task2-vite-nunjucks",
+  "version": "1.0.0",
+  "description": "Bootstrap 5 pages with Nunjucks templating and Vite bundler",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.3",
+    "nunjucks": "^3.2.4"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

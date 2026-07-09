@@ -1,0 +1,122 @@
+{% extends "../layouts/base.njk" %}
+
+{% block title %}BootstrapLab · Home{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-gradient text-white py-5">
+  <div class="container py-4">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <h1 class="display-4 fw-bold lh-1 mb-3">Explore. Remix. Build.</h1>
+        <p class="lead fs-5 mb-4 opacity-75">
+          Your internship task: extract Bootstrap 5 UI patterns & craft clean, responsive pages.
+          This is a live example with navbar, hero, cards, footer — all remixed with care.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="/about" class="btn btn-light btn-lg px-4 py-2 fw-semibold">About us</a>
+          <a href="/contact" class="btn btn-outline-light btn-lg px-4 py-2">Contact</a>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center">
+        <div id="heroCarousel" class="carousel slide w-100 shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
+          <div class="carousel-inner rounded-4">
+            <div class="carousel-item active">
+              <div class="bg-dark p-5 text-center text-white" style="min-height: 220px;">
+                <i class="bi bi-grid-3x3-gap-fill display-1 text-primary"></i>
+                <h3 class="mt-3">Component synergy</h3>
+                <p class="opacity-75">Navbar · Cards · Hero · Footer</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="bg-secondary p-5 text-center text-white" style="min-height: 220px;">
+                <i class="bi bi-layout-three-columns display-1 text-warning"></i>
+                <h3 class="mt-3">Responsive & polished</h3>
+                <p class="opacity-75">Mobile-first · utility classes</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="bg-info bg-gradient p-5 text-center text-dark" style="min-height: 220px;">
+                <i class="bi bi-code-square display-1 text-white"></i>
+                <h3 class="mt-3">Clean code</h3>
+                <p class="opacity-75">Well-indented, semantic HTML5</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col">
+        <h2 class="display-6 fw-semibold">Extracted & remixed components</h2>
+        <p class="text-muted">Three high‑quality UI patterns combined into one page</p>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card card-hover h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <i class="bi bi-border-width feature-icon"></i>
+            <h5 class="card-title mt-3">Navbar</h5>
+            <p class="card-text text-muted">Sticky, responsive navbar with active state — clean and accessible.</p>
+            <span class="badge bg-primary bg-opacity-10 text-primary">Bootstrap 5</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-hover h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <i class="bi bi-card-image feature-icon"></i>
+            <h5 class="card-title mt-3">Cards & Carousel</h5>
+            <p class="card-text text-muted">Hero carousel & feature cards — modular, easy to remix.</p>
+            <span class="badge bg-primary bg-opacity-10 text-primary">remixed</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-hover h-100 border-0 shadow-sm">
+          <div class="card-body text-center p-4">
+            <i class="bi bi-envelope-paper feature-icon"></i>
+            <h5 class="card-title mt-3">Forms & Footer</h5>
+            <p class="card-text text-muted">Working contact form, clean footer with social icons.</p>
+            <span class="badge bg-primary bg-opacity-10 text-primary">polished</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quote Section -->
+<section class="bg-white py-5 section-divider">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="p-4 p-md-5 bg-light rounded-4">
+          <div class="d-flex gap-4 align-items-start">
+            <i class="bi bi-quote display-4 text-primary opacity-50"></i>
+            <div>
+              <p class="fs-5 fst-italic">"Design clean, modern, and responsive HTML pages by remixing Bootstrap components — not just copy‑pasting."</p>
+              <p class="text-muted mb-0">— Internship Task · Bootstrap 5 UI Exploration</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
