@@ -8,7 +8,7 @@ This project recreates the three Bootstrap 5 pages (Home, About, Contact) from T
 
 ## 🔗 Links
 
-- **GitHub Repository:** https://github.com/soma1214/bootstrap5-task2-vite-nunjucks
+- **GitHub Repository:** https://github.com/soma1214/task2
 - **Live Demo:** https://task2-bootstrap-vite-nunjucks.netlify.app/
 
 ---
